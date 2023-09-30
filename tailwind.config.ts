@@ -7,7 +7,17 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      'white': '#FFFFFF',
+      'lgrey': '#EAEAEA',
+      'nblue': '#28364C',
+      'dgrey': '#878E99',
+    },
+    
     extend: {
+      fontFamily: {
+        rubik: ['var(--font-rubik)'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
