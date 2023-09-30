@@ -3,6 +3,7 @@ const nextConfig = {}
 
 module.exports = {
     output: 'export',
+    basePath: "/maevetra",
     webpack: (config, options) =>
     {
         config.module.rules.push({
