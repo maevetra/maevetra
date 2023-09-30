@@ -61,7 +61,7 @@ const SideBar = () => {
                 <div className='w-2/5 h-full flex flex-col justify-center items-center bg-nblue'>
                     <div className='w-48 h-48 bg-white rounded-full'></div>
                     <div className={`text-white font-bold text-4xl mt-4 ${playfair.className}`}>Maeve Tra</div>
-                    <div className='text-white mt-4 px-4 text-center'>"Enjoy your time while you're here."</div>
+                    <div className='text-white mt-4 px-4 text-center'>&quot;Enjoy your time while you&apos;re here.&quot;</div>
                     <div className='flex justify-evenly mt-10'>
                     <svg className='mr-4' xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 532 532" 
                     fill= {heart ? "#ff0000" : "#28364C"} stroke = {heart ? "none" : "#ffffff"} stroke-width="20"
@@ -82,7 +82,7 @@ const SideBar = () => {
                     </div>
                     <div className='mt-8 divide-y divide-solid w-full '>
                         {pages.map((page, index) => (
-                            <div>
+                            <div key={index}>
                                 <a className='flex flex-cols justify-between pt-4' href={page.to}>
                             <div className='font-semibold text-lg text-dgrey'>0{index}. <span className='text-nblue'>{page.title}</span></div>
                             <div>

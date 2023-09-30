@@ -16,7 +16,7 @@ function Card(props) {
                     </div>
                     <div className='col-span-7 p-8'>
                         <ul className='list-disc'>{props.description.map(line => (
-                            <li>{line}</li>
+                            <li key={line[0]}>{line}</li>
                         ))}
                         </ul>
                     </div>

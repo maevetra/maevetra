@@ -31,7 +31,7 @@ export default function About() {
                 <div className='col-span-2 flex-shrink pr-5'>
                     <div>
                         <h3 className="text-xl font-bold tracking-tight sm:text-xl">Who am I?</h3>
-                        <p className='mb-2'>I'm a senior at Purdue University studying Computer Science
+                        <p className='mb-2'>I&apos;m a senior at Purdue University studying Computer Science
                             with concentration in Software Engineer, Security and Machine Learning. I also
                             have a minor in Art and Design Studio. My goal after graduation is to work as a
                             <strong>
@@ -40,14 +40,14 @@ export default function About() {
                             strive to create products that are not only functional but also aesthestically
                             pleasing.
                         </p>
-                        <p className='mb-2'>Besides front-end development, I'm also looking to diversify
-                            my technical knowledge and portfolio. I'm willing to learn and adapt to
+                        <p className='mb-2'>Besides front-end development, I&apos;m also looking to diversify
+                            my technical knowledge and portfolio. I&apos;m willing to learn and adapt to
                             different tools and languages . I am especially curious about
                              <strong>
                                 machine intelligence
                             </strong>
                             and the integration of machine learning into technical products. Because of
-                            this, I'm open to opportunities where I can learn more about and contribute to
+                            this, I&apos;m open to opportunities where I can learn more about and contribute to
                             the field.
                         </p>
                         <p>
@@ -62,7 +62,7 @@ export default function About() {
                     </div>
                     <div className="mx-auto max-w-screen place-self-start lg:mx-0 mt-5">
                         <h3 className="text-xl font-bold mb-2 sm:text-xl">My skills</h3>
-                        {languages.map(language => (<Tag language={language}/>))}
+                        {languages.map(language => (<Tag key={language} language={language}/>))}
 
                     </div>
                 </div>
