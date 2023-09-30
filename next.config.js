@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const repo = 'maevetra'
+const repo = 'my-portfolio'
 const assetPrefix = `/${repo}/`
 const basePath = `/${repo}`
 
