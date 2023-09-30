@@ -1,9 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+
+const repo = 'maevetra'
+const assetPrefix = `/${repo}/`
+const basePath = `/${repo}`
 
 module.exports = {
     output: 'export',
-    basePath: "/maevetra",
+    assetPrefix: assetPrefix,
+    basePath: basePath,
     webpack: (config, options) =>
     {
         config.module.rules.push({
