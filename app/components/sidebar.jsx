@@ -58,7 +58,7 @@ const SideBar = () => {
                 )
         } 
             {open ? 
-            <div className='fixed ease-in-out delay-150 duration-300 flex h-full w-4/6 shadow-lg'>
+            <div className='fixed flex h-full w-4/6 shadow-lg'>
                 <div className='w-2/5 h-full flex flex-col justify-center items-center bg-nblue'>
                     <div className='w-48 h-48 bg-white rounded-full'></div>
                     <div className={`text-white font-bold text-4xl mt-4 ${playfair.className}`}>Maeve Tra</div>
@@ -84,8 +84,8 @@ const SideBar = () => {
                     <div className='mt-8 divide-y divide-solid w-full '>
                         {pages.map((page, index) => (
                             <div key={index}>
-                                <Link className='flex flex-cols justify-between pt-4' href={page.to}>
-                            <div className='font-semibold text-lg text-dgrey'>0{index}. <span className='text-nblue'>{page.title}</span></div>
+                                <Link onClick={() => setOpen(!open)} className='flex flex-cols justify-between pt-4' href={page.to}>
+                            <div className='font-bold text-lg text-dgrey'>0{index}. <span className='text-nblue'>{page.title}</span></div>
                             <div>
                             <svg className='inline-flex mr-4 pb-1' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
                                 <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>

@@ -25,7 +25,7 @@ export default function About() {
                 description="Here you will find more information about
                     me, what I do, and my current skills mostly in terms of programming and
                     technology."
-                number="01" width="1"/>
+                number="01"/>
 
             <div className='grid grid-cols-3 gap-8'>
                 <div className='col-span-2 flex-shrink pr-5'>
@@ -35,7 +35,7 @@ export default function About() {
                             with concentration in Software Engineer, Security and Machine Learning. I also
                             have a minor in Art and Design Studio. My goal after graduation is to work as a
                             <strong>
-                                Front-end Developer
+                            &nbsp;Front-end Developer
                             </strong>, where my passion for Computer Science and Art can intertwine. I
                             strive to create products that are not only functional but also aesthestically
                             pleasing.
@@ -44,14 +44,14 @@ export default function About() {
                             my technical knowledge and portfolio. I&apos;m willing to learn and adapt to
                             different tools and languages . I am especially curious about
                              <strong>
-                                machine intelligence
+                             &nbsp;machine intelligence&nbsp;
                             </strong>
                             and the integration of machine learning into technical products. Because of
                             this, I&apos;m open to opportunities where I can learn more about and contribute to
                             the field.
                         </p>
                         <p>
-                            I am currently eligible for full-time positions in the U.S. under
+                            I am currently eligible for full-time positions in the U.S. under&nbsp;
                             <a
                                 className='underline font-bold'
                                 href='https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students'

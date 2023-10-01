@@ -5,40 +5,56 @@ const projects = [
     {
         name: "BoilerBuddies",
         description: [
-            "Social media webapp with GoLang backend, React frontend, Firebase for authenti" +
-                    "cation and PostgreSQL as database.",
-            "Implemented the majority of the front end using React. Assisted in testing and" +
+            "BoilerBuddies is a social media webapp aims to provide a secure platform exclusively for Purdue students to effortlessly connect with individuals who have comparable interests, through both one-on-one and group discussions.",
+            "I implemented the majority of the front end using React amnd assisted in testing and" +
                     " debugging the backend server.",
-            "Set up and maintain authentication protocol through Firebase Authentication"
+            "I also helped setting up and maintain authentication protocol through Firebase Authentication"
         ],
-        language: ["React", "GoLang", "Firebase", "PostgreSQL"],
+        language: [
+            "React", "GoLang", "Firebase", "PostgreSQL"
+        ],
         link: "https://github.com/meghnakr/BoilerBuddies"
     }, {
-        name: "Car Rental",
-        description: ["Implemented a car rental service website using MVC framework that allows users to search and reserve cars from the database and manage reservations.",
-        "Built, managed and implemeneted queries for a MySQL database of 6 tables and over 200 data records."],
+        name: "Indiana Rental",
+        description: [
+            "A car rental service website using MVC framework that allows users" +
+                    " to search and reserve cars from the database and manage reservations.",
+            "Built, managed and implemeneted queries for a MySQL database of 6 tables and o" +
+                    "ver 200 data records."
+        ],
         language: [
-            "Node", "SQL"
+            "Node.js", "MySQL"
         ],
         link: "https://github.com/maevetra/CS348-CarRental"
     }, {
         name: "Valentine",
-        description: ["Description"],
+        description: ["A digital love letter powered by Javascript and CSS animations to render and animate components such as progress bar, typewriter effect and run-away button.",
+    "The final page features a digital letter that can be opened by press and hold on the envelope."],
         language: [
             "React", "HTML/CSS"
         ],
         link: "https://github.com/maevetra/valentine"
     }, {
         name: "Virtual Closet",
-        description: ["Implemented a virtual closet that allows users to upload images of clothing items and have details of that items filled out by an AI Image Recognizer.",
-        "Trained and tested image recognizing machine learning model for clothing items using Google Cloud AutoML Vision with 82% accuracy.",
-        "Utilized Firestore as the main database and Firebase Authentication."],
+        description: ["A virtual closet application that allows the user to enter new clothing, keep " +
+                "track of existing clothing and laundry, and create clothing combina" +
+                "tions.","The application features an AI image detector using Google Cloud AutoML Vision to recognize details of " +
+                "the clothing item in a photo uploaded by the user." , "The application also makes " +
+                "suggestions on what clothing items the user should wear depending on the weath" +
+                "er and/or the user's personal events on their calendar."],
         language: ["Flutter"],
         link: "https://github.com/maevetra/virtual_closet"
     }, {
         name: "Quizlet Flashcard",
-        description: ["Simple Chrome extension that takes Quizlet URL, parses the flashcards into a JSON file, and send to the front end. Front end will store decks of flashcards in Chrome's local storage and pull a card randomly in a selected deck for users to review.",
-        "The goal is to make reviewing easier without allocating a separate session. Users will be asked to provide answers to flashcards in the deck that they choose periodically when they're using Chrome."],
+        description: [
+            "Simple Chrome extension that takes Quizlet URL, parses the flashcards into a J" +
+                    "SON file, and send to the front end. Front end will store decks of flashcards " +
+                    "in Chrome's local storage and pull a card randomly in a selected deck for user" +
+                    "s to review.",
+            "The goal is to make reviewing easier without allocating a separate session. Us" +
+                    "ers will be asked to provide answers to flashcards in the deck that they choos" +
+                    "e periodically when they're using Chrome."
+        ],
         language: [
             "Python", "Django", "JavaScript"
         ],
@@ -48,9 +64,12 @@ const projects = [
 
 export default function Projects() {
     return (
-        <main
-            className="min-w-screen items-center justify-between p-24 px-36">
-            <Heading title="My projects" number="02" description="Some projects I have done to showcase my skills." width="2"/>
+        <main className="min-w-screen items-center justify-between p-24 px-36">
+            <Heading
+                title="My projects"
+                number="02"
+                description="Some projects I have done to showcase my skills."
+                width="2/5"/>
             <div>
                 {
                     projects.map(project => (

@@ -1,10 +1,11 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
+import { useTheme } from 'next-themes'
 //import ResumePDF from './resume.pdf';
 
 const NavBar = () => {
-    
+
     return (
         <div className='flex absolute top-6 right-0 z-10'>
                     <div className="w-1/3 px-10 flex items-stretch justify-center">
