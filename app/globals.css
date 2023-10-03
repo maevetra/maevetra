@@ -18,8 +18,7 @@
 }
 
 body {
-  color: #28364C;
-  background-color: #EAEAEA;
+  @apply bg-lgrey text-nblue;
 }
 
 

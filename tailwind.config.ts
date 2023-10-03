@@ -13,8 +13,9 @@ const config: Config = {
       'black': '#000000',
       'white': '#FFFFFF',
       'lgrey': '#EAEAEA',
-      'nblue': '#28364C',
-      'dgrey': '#878E99',
+      'nblue': '#580C0C',
+      'dred' : '#580C0C',
+      'dgrey': '#787878',
     },
     
     extend: {

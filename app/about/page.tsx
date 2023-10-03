@@ -27,7 +27,7 @@ export default function About() {
                     technology."
                 number="01"/>
 
-            <div className='grid grid-cols-3 gap-8'>
+            <div className=''>
                 <div className='col-span-2 flex-shrink pr-5'>
                     <div>
                         <h3 className="text-xl font-bold tracking-tight sm:text-xl">Who am I?</h3>
@@ -66,9 +66,10 @@ export default function About() {
 
                     </div>
                 </div>
+                {/*
                 <div className='ml-6 h-full'>
                     <div className="w-full h-full border-2"></div>
-                </div>
+    </div>*/}
             </div>
 
         </main>
