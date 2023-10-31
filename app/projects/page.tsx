@@ -1,3 +1,4 @@
+"use client"
 import { useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
 import Card from '../components/card';
 import Heading from '../components/heading'
