@@ -7,7 +7,7 @@ import { useTheme } from 'next-themes'
 const NavBar = () => {
 
     return (
-        <div className='flex absolute top-6 right-0 z-10'>
+        <div className='flex fixed top-6 right-0 z-10'>
                     <div className="w-1/3 px-10 flex items-stretch justify-center">
                             <button className='mx-2'>
                                 <a title='GitHub' href="https://github.com/maevetra" target="_blank">

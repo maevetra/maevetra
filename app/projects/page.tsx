@@ -1,5 +1,7 @@
+import { useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
 import Card from '../components/card';
 import Heading from '../components/heading'
+import { useRef } from 'react';
 
 const projects = [
     {
@@ -62,9 +64,20 @@ const projects = [
     }
 ]
 
+
+
 export default function Projects() {
+    const target = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target,
+        offset: ['start end', 'end start'],
+    });
+    const parallax = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+    const reverseParallax = useTransform(parallax, (v) => -v);
+    useMotionValueEvent(parallax, 'change', (v) => console.log(v));
+
     return (
-        <main className="min-w-screen items-center justify-between p-24 px-36">
+        <main className="min-w-screen items-center justify-between p-12 px-36" ref={target}>
             <Heading
                 title="My projects"
                 number="02"

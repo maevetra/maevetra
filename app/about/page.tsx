@@ -19,7 +19,7 @@ const languages = [
 export default function About() {
 
     return (
-        <main className="items-center justify-between p-24 px-36">
+        <main className="items-center justify-between p-12 px-36">
             <Heading
                 title="About me"
                 description="Here you will find more information about
