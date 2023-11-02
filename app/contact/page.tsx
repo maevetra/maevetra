@@ -11,7 +11,7 @@ export default function Contact() {
         <motion.section
             ref={ref}
             id="contact"
-            className="min-w-screen items-center justify-between p-12 px-36">
+            className="min-w-screen items-center justify-between px-36">
             <Heading
                 number="04"
                 title="Don't be a stranger"
@@ -32,14 +32,14 @@ export default function Contact() {
 
                 }}>
                 <input
-                    className="h-12 px-4 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+                    className="h-12 px-4 outline dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
                     name="senderEmail"
                     type="email"
                     required={true}
                     maxLength={500}
                     placeholder="Your email"/>
                 <textarea
-                    className="h-30 my-3 borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+                    className="h-30 my-3 p-4 outline dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
                     name="message"
                     placeholder="Your message"
                     required={true}

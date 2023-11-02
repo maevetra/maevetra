@@ -7,7 +7,12 @@ import { playfair } from '../font';
 import Image from 'next/image';
 import CoverCircleImg from '@/public/img/cover-circle.svg'
 import { pages } from '@/lib/data';
+import { motion } from 'framer-motion';
 
+const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  }
 
 const SideBar = () => {
     const [open, setOpen] = useState(false);
@@ -17,7 +22,7 @@ const SideBar = () => {
         <> {
             open
                 ? (
-                    <svg  className="flex fixed items-center cursor-pointer left-10 top-6 z-50" 
+                    <svg  className="flex fixed items-center cursor-pointer left-10 top-6 z-30" 
                     xmlns="http://www.w3.org/2000/svg" 
                     height="40" 
                     viewBox="0 0 384 512"
@@ -41,7 +46,9 @@ const SideBar = () => {
                 )
         } 
             {open ? 
-            <div className='fixed flex h-full w-4/6 shadow-lg'>
+            <motion.div initial="closed"
+            whileInView="open"
+            variants={variants} className='fixed flex h-full w-4/6 shadow-lg z-20'>
                 <div className='w-2/5 h-full flex flex-col justify-center items-center bg-dred'>
                     <div className='w-full hover:cursor-pointer' onClick={() => { setOpen(!open);router.push('/')}}>
                         <Image src={CoverCircleImg} alt="img" className="object-cover animate-disc"></Image>
@@ -84,7 +91,7 @@ const SideBar = () => {
 
                     </div>
                 </div>
-            </div>
+            </motion.div>
             : <></>}
 
 </>

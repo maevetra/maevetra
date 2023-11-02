@@ -24,7 +24,7 @@
 }
 
 body {
-  @apply bg-lgrey text-nblue;
+  @apply bg-white text-nblue;
 }
 
 .will-change-transform {

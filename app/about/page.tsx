@@ -9,7 +9,7 @@ import { useSectionInView } from '@/lib/hooks';
 export default function About() {
     const { ref } = useSectionInView("about");
     return (
-        <motion.section ref={ref} id="about" className="items-center min-h-screen justify-between p-12 px-36">
+        <motion.section ref={ref} id="about"  className='w-full h-fit -mt-12 pt-24 bg-lgrey items-center min-h-screen justify-between px-36'>
             <Heading
                 title="About me"
                 description="Here you will find more information about
@@ -23,16 +23,17 @@ export default function About() {
                         <h3 className="text-xl font-bold tracking-tight sm:text-xl">Who am I?</h3>
                         <p className='mb-2'>I&apos;m a senior at Purdue University studying Computer Science
                             with concentration in Software Engineer, Security and Machine Learning. I also
-                            have a minor in Art and Design Studio. My goal after graduation is to work as a
-                            <strong>
-                            &nbsp;Front-end Developer
-                            </strong>, where my passion for Computer Science and Art can intertwine. I
+                            have a minor in Art and Design Studio. I&apos;m actively seeking  <strong>
+                             &nbsp;full-time positions&nbsp;
+                            </strong>
+                            where I can apply my knowledge and skills to solve complex problems and collaborate 
+                            with like-minded professionals. I&apos;m searching for an opportunity to be part of a team that&apos;s making a difference. I
                             strive to create products that are not only functional but also aesthestically
                             pleasing.
                         </p>
-                        <p className='mb-2'>Besides front-end development, I&apos;m also looking to diversify
+                        <p className='mb-2'> I&apos;m looking to diversify
                             my technical knowledge and portfolio. I&apos;m willing to learn and adapt to
-                            different tools and languages . I am especially curious about
+                            new technologies . I am especially curious about
                              <strong>
                              &nbsp;machine intelligence&nbsp;
                             </strong>
@@ -61,6 +62,8 @@ export default function About() {
                     <div className="w-full h-full border-2"></div>
     </div>*/}
             </div>
+            
+            
 
         </motion.section>
     )

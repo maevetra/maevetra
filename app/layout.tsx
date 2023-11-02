@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import SideBar from './components/sidebar'
+import Footer from './components/footer'
 import  { lato } from './font'
 import NavBar from './components/navbar'
 import ActiveSectionContextProvider from '@/context/activeSection'
@@ -19,8 +20,8 @@ export default function RootLayout({
 
       <body className={`flex flex-col min-h-screen ${lato.className} `}>
         <ActiveSectionContextProvider>
-        <SideBar/>
         <NavBar/>
+        <SideBar/>
         {children}
         </ActiveSectionContextProvider>
         
