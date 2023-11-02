@@ -1,9 +1,10 @@
 import React from 'react';
 import Tag from './tags';
+import { motion } from 'framer-motion';
 
 function Card(props) {
     return(
-        <div className="container w-full flex-col mx-auto mt-4 p-0">
+        <motion.div className="container w-full flex-col mx-auto mt-4 p-0" >
                 <div className="grid grid-cols-10 w-full divide-x first-letter:space-y-3  min-w-full bg-white ">
                     <div className='col-span-2 p-4'>
                         <span className="font-bold text-xl mb-4">{props.name}</span>
@@ -32,7 +33,7 @@ function Card(props) {
                     </div>
                     
                 </div>
-        </div>
+        </motion.div>
     )
 }
 

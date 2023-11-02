@@ -29,6 +29,7 @@ const config: Config = {
       },
       animation: {
         typing: "typing 2s",
+        disc: "spin 10s linear infinite"
       },
       keyframes: {
         typing: {
@@ -47,6 +48,14 @@ const config: Config = {
           "100%": {
             borderColor: "black"
           }  
+        },
+        spin: {
+          "0%": {
+            transform: "rotate(0deg)"
+          },
+          "100%": {
+            transform: "rotate(360deg)"
+          }
         }
       },
     },

@@ -6,25 +6,8 @@ import Link from 'next/link';
 import { playfair } from '../font';
 import Image from 'next/image';
 import CoverCircleImg from '@/public/img/cover-circle.svg'
+import { pages } from '@/lib/data';
 
-const pages = [
-    {
-        title: 'Welcome',
-        to: '/'
-    },
-    {
-        title: 'About me',
-        to: '#about'
-    },
-    {
-        title: 'Treasures',
-        to: '#projects'
-    },
-    {
-        title: "Don't be a stranger",
-        to: '#contact'
-    }, 
-]
 
 const SideBar = () => {
     const [open, setOpen] = useState(false);
@@ -61,7 +44,7 @@ const SideBar = () => {
             <div className='fixed flex h-full w-4/6 shadow-lg'>
                 <div className='w-2/5 h-full flex flex-col justify-center items-center bg-dred'>
                     <div className='w-full hover:cursor-pointer' onClick={() => { setOpen(!open);router.push('/')}}>
-                        <Image src={CoverCircleImg} className="object-cover"></Image>
+                        <Image src={CoverCircleImg} alt="img" className="object-cover animate-disc"></Image>
                     </div>
                     <div className={`text-white font-bold text-4xl  ${playfair.className}`}>Maeve Tra</div>
                     <div className='text-white mt-4 px-4 text-center'>&quot;Enjoy your time while you&apos;re here.&quot;</div>

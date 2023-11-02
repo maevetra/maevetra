@@ -1,25 +1,15 @@
+"use client"
 import React from 'react';
 import Tag from '../components/tags';
 import Heading from '../components/heading';
-
-const languages = [
-    "Javascript",
-    "HTML/CSS",
-    "React",
-    "Python",
-    "SQL",
-    "Node",
-    "AWS",
-    "Java",
-    "C/C++",
-    "Figma",
-    "Adobe"
-]
+import { languages } from '@/lib/data';
+import { motion } from 'framer-motion';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
-
+    const { ref } = useSectionInView("about");
     return (
-        <main className="items-center justify-between p-12 px-36">
+        <motion.section ref={ref} id="about" className="items-center min-h-screen justify-between p-12 px-36">
             <Heading
                 title="About me"
                 description="Here you will find more information about
@@ -72,6 +62,6 @@ export default function About() {
     </div>*/}
             </div>
 
-        </main>
+        </motion.section>
     )
 }
