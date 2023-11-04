@@ -9,7 +9,7 @@ import { useSectionInView } from '@/lib/hooks';
 export default function About() {
     const { ref } = useSectionInView("about");
     return (
-        <motion.section ref={ref} id="about"  className='w-full h-fit -mt-12 pt-24 bg-lgrey items-center min-h-screen justify-between px-36'>
+        <motion.section ref={ref} id="about"  className='w-full h-fit -mt-12 pt-24 bg-lgrey items-center justify-between px-36'>
             <Heading
                 title="About me"
                 description="Here you will find more information about
