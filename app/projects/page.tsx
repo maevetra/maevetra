@@ -1,7 +1,9 @@
 "use client"
+import React from 'react';
 import { useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
 import Card from '../components/card';
 import Heading from '../components/heading'
+import Project from '../components/project';
 import { projects } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
 
@@ -17,13 +19,10 @@ export default function Projects() {
                 width="2/5"/>
             <div>
                 {
-                    projects.map(project => (
-                        <Card
-                            key={project.name}
-                            name={project.name}
-                            description={project.description}
-                            languages={project.language}
-                            link={project.link}/>
+                    projects.map((project, index) => (
+                        <React.Fragment key={index}>
+                        <Project {...project} />
+                      </React.Fragment>
                     ))
                 }
 

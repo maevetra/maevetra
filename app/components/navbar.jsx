@@ -49,7 +49,7 @@ const NavBar = () => {
                                     </svg>
                                 </a>
                             </button>
-                            <button className='min-w-fit bg-nblue hover:scale-110 text-white font-bold whitespace-nowrap hover:bg-red-700 text-sm px-4 py-2 rounded-full mx-2'>
+                            <button className='min-w-fit bg-nblue hover:scale-110 text-white whitespace-nowrap hover:bg-red-700 text-sm px-4 py-2 rounded-full mx-2'>
                                 <Link title='Resume' target='_blank' href='/resume.pdf'>
                                    My Resume
                                 </Link>

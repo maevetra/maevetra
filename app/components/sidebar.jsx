@@ -51,7 +51,8 @@ const SideBar = () => {
             variants={variants} className='fixed flex h-full w-4/6 shadow-lg z-20'>
                 <div className='w-2/5 h-full flex flex-col justify-center items-center bg-dred'>
                     <div className='w-full hover:cursor-pointer' onClick={() => { setOpen(!open);router.push('/')}}>
-                        <Image src={CoverCircleImg} alt="img" className="object-cover animate-disc"></Image>
+                        
+                        <Image src={CoverCircleImg} alt="img" className="object-cover animate-disc z-1"></Image>
                     </div>
                     <div className={`text-white font-bold text-4xl  ${playfair.className}`}>Maeve Tra</div>
                     <div className='text-white mt-4 px-4 text-center'>&quot;Enjoy your time while you&apos;re here.&quot;</div>
@@ -70,7 +71,7 @@ const SideBar = () => {
                 </div>
                 <div className='h-full w-3/5 flex flex-col justify-center bg-white px-20'>
                     <div>
-                        <h2 className={`text-3xl font-black text-dred sm:text-3xl `}>THE CONTENT</h2>
+                        <h2 className={`text-3xl font-bold text-dred sm:text-3xl `}>THE CONTENT</h2>
                         <h2 className="text-2xl font-semibold sm:text-2xl text-dgrey">PLAYLIST <span className='text-lg font-normal'>/ {pages.length} tracks</span></h2>
                     </div>
                     <div className='mt-8 divide-y divide-solid w-full '>

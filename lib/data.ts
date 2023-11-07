@@ -1,5 +1,9 @@
 import React from 'react';
 import { FaReact } from "react-icons/fa";
+import boilerBuddies from 'public/img/boilerbuddies-1.jpg'
+import carRental from 'public/img/car-rental-1.jpg'
+import valentine from 'public/img/valentine-1.jpg'
+import virtualCloset from 'public/img/virtual-closet-4.jpg'
 
 export const pages = [
     {
@@ -14,12 +18,12 @@ export const pages = [
     },
     {
         name: 'projects',
-        title: 'Treasures',
+        title: 'My projects',
         to: '#projects'
     },
     {
         name: 'experience',
-        title: 'My Experience',
+        title: 'My experience',
         to: '#experience'
     },
     {
@@ -34,14 +38,15 @@ export const projects = [
         name: "BoilerBuddies",
         description: [
             "BoilerBuddies is a social media webapp aims to provide a secure platform exclusively for Purdue students to effortlessly connect with individuals who have comparable interests, through both one-on-one and group discussions.",
-            "I implemented the majority of the front end using React amnd assisted in testing and" +
+            " I implemented the majority of the front end using React and assisted in testing and" +
                     " debugging the backend server.",
-            "I also helped setting up and maintain authentication protocol through Firebase Authentication"
+            " I also helped setting up and maintain authentication protocol through Firebase Authentication"
         ],
         language: [
-            "React", "GoLang", "Firebase", "PostgreSQL"
+            "React", "GoLang", "Firebase", "PostgreSQL", "AWS"
         ],
-        link: "https://github.com/meghnakr/BoilerBuddies"
+        link: "https://github.com/meghnakr/BoilerBuddies",
+        imageURL: boilerBuddies
     }, {
         name: "Indiana Rental",
         description: [
@@ -51,9 +56,10 @@ export const projects = [
                     "ver 200 data records."
         ],
         language: [
-            "Node.js", "MySQL"
+            "Node.js", "MySQL", "Express", "JavaScript"
         ],
-        link: "https://github.com/maevetra/CS348-CarRental"
+        link: "https://github.com/maevetra/CS348-CarRental",
+        imageURL: carRental
     }, {
         name: "Valentine",
         description: ["A digital love letter powered by Javascript and CSS animations to render and animate components such as progress bar, typewriter effect and run-away button.",
@@ -61,7 +67,8 @@ export const projects = [
         language: [
             "React", "HTML/CSS"
         ],
-        link: "https://github.com/maevetra/valentine"
+        link: "https://github.com/maevetra/valentine",
+        imageURL: valentine
     }, {
         name: "Virtual Closet",
         description: ["A virtual closet application that allows the user to enter new clothing, keep " +
@@ -70,8 +77,9 @@ export const projects = [
                 "the clothing item in a photo uploaded by the user." , "The application also makes " +
                 "suggestions on what clothing items the user should wear depending on the weath" +
                 "er and/or the user's personal events on their calendar."],
-        language: ["Flutter"],
-        link: "https://github.com/maevetra/virtual_closet"
+        language: ["Flutter", "Firebase", "Firestore", "Google Cloud Vision"],
+        link: "https://github.com/maevetra/virtual_closet",
+        imageURL: virtualCloset
     }, {
         name: "Quizlet Flashcard",
         description: [
@@ -86,7 +94,8 @@ export const projects = [
         language: [
             "Python", "Django", "JavaScript"
         ],
-        link: "https://github.com/maevetra/Chrome-extension"
+        link: "https://github.com/maevetra/Chrome-extension",
+        imageURL: null
     }
 ] as const;
 

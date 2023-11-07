@@ -8,6 +8,9 @@ module.exports = {
     output: 'export',
     assetPrefix: assetPrefix,
     basePath: basePath,
+    images: {
+        unoptimized: true
+      },
     webpack: (config, options) =>
     {
         config.module.rules.push({
