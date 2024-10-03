@@ -20,9 +20,9 @@ export default function RootLayout({
 
       <body className={`flex flex-col min-h-screen ${poppins.className}`}>
         <ActiveSectionContextProvider>
-          <div className="flex flex-row bg-white shadow w-screen">
-            <NavBar/>
+          <div className="sticky flex flex-row bg-white shadow h-20 items-center justify-between z-50">
             <SideBar/>
+            <NavBar/>
           </div>
           {children}
         </ActiveSectionContextProvider>

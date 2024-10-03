@@ -15,7 +15,6 @@ import Footer from "./components/footer"
 const introHeaderVariants: Variants = {
     hide: {
         opacity: 0,
-        x: 500,
     },
     show: {
         opacity: 1,
@@ -29,7 +28,6 @@ const introHeaderVariants: Variants = {
 const introPictureVariants: Variants = {
     hide: {
         opacity: 0,
-        x: -500,
     },
     show: {
         opacity: 1,
@@ -48,45 +46,51 @@ export default function Home() {
 
     return (
         <div className="pt-16">
-        <section ref={ref} id="home" className="min-h-[calc(100vh-5rem)] flex flex-col md:flex-row items-center justify-between text-center md:px-8">
+        <section ref={ref} id="home" className="min-h-[calc(100vh-5rem)] flex flex-col md:flex-row items-center justify-center text-center md:px-8">
                  <motion.header
-                    className='h-full md:w-1/2 flex-shrink'
+                    className='md:w-1/2 w-full items-center place-items-center flex flex-col'
                     initial="hide"
                     whileInView="show"
                     viewport={{ once: true }}
                     variants={introPictureVariants}>
-                        <Image src={CoverImg} alt="My picture"></Image>
+                        <Image src={CoverImg} className="self-center" alt="My picture"></Image>
                     </motion.header>
                     <motion.header
-                    className="h-full md:w-1/2 text-base text-center whitespace-nowrap"
+                    className="md:w-1/2 w-full text-base text-center whitespace-nowrap px-4"
                     initial="hide"
                     whileInView="show"
                     viewport={{ once: true }}
                     variants={introHeaderVariants}>
                          Hi, my name is
-                <div className="w-fit text-center m-auto mb-5  text-7xl font-black text-dred place-self-center ">
-                <h1 className={`${playfair.className} overflow-hidden whitespace-nowrap `}>
+                <div className="text-center flex flex-col text-lg gap-3 font-semibold text-dred place-self-center">
+                <h1 className={`${playfair.className} overflow-hidden text-7xl font-black whitespace-nowrap `}>
                     Maeve Tra
                 </h1>
-                </div>
                 Full-stack Software Engineer
-                <ul className="m-auto mt-3 flex flex-row justify-items-center justify-evenly">
-                    <Link href='#about' className="cursor-pointer"
-                    onClick={()=> {setActiveSection("about"); }}>  <svg fill="#580C0C" className='inline-flex mr-4 pb-1' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                                About</Link>
+                </div>
+                <ul className="m-auto mt-3 flex flex-row justify-items-center justify-around">
+                    <li>
+                    <Link href='#about' className="mr-2 cursor-pointer"
+                    onClick={()=> {setActiveSection("about"); }}> About</Link>
+                    </li>
+                    <li>|</li>
+                    <li>
                     <Link href='#projects' className="cursor-pointer"
-                     onClick={()=> {setActiveSection("projects"); }}>  <svg fill="#580C0C" className='inline-flex mr-4 pb-1' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                     onClick={()=> {setActiveSection("projects"); }}>
                                 Projects</Link>
-                                <Link href='#experience' className="cursor-pointer"
-                     onClick={()=> {setActiveSection("projects"); }}>  <svg fill="#580C0C" className='inline-flex mr-4 pb-1' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                                Experience</Link>
+                    </li>
+                    <li>|</li>
+                    <li className="mr-2">
+                                <Link href='#experience' className="cursor-pointer gap-0"
+                     onClick={()=> {setActiveSection("projects"); }}> 
+                               Experience</Link>
+                    </li>
+                    <li>|</li>
+                    <li className="mr-2">
                     <Link href='#contact' className="cursor-pointer"
-                     onClick={()=> {setActiveSection("contact"); }}>  <svg fill="#580C0C" className='inline-flex mr-4 pb-1' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                                Connect</Link>
+                     onClick={()=> {setActiveSection("contact"); }}>  
+                               Connect</Link>
+                    </li>
                 </ul>
                     </motion.header>
         

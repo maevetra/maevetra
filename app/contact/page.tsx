@@ -11,7 +11,7 @@ export default function Contact() {
         <motion.section
             ref={ref}
             id="contact"
-            className="min-w-screen items-center justify-between px-36">
+            className="items-center justify-between px-8 md:px-36">
             <Heading
                 number="04"
                 title="Don't be a stranger"

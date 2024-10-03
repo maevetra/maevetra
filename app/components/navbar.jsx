@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
+import { useTheme } from 'next-themes'
 import { useScrollPosition } from '@/lib/hooks';
 //import ResumePDF from './resume.pdf';
 
@@ -8,9 +9,9 @@ const NavBar = () => {
     const scrollPosition = useScrollPosition()
 
     return (
-        <div className={`fixed top-6 right-0 z-10 `}>
-                    <div className="w-1/3 px-10 flex items-stretch justify-start">
-                            <button className='hover:scale-110 mx-2'>
+        <div className={`flex flex-row-reverse mr-5`}>
+                    <div className="flex items-stretch justify-end gap-4">
+                            <button className='hover:scale-110 '>
                                 <a title='GitHub' href="https://github.com/maevetra" target="_blank">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +27,7 @@ const NavBar = () => {
                                     </svg>
                                 </a>
                             </button>
-                            <button className='hover:scale-110 mx-2'>
+                            <button className='hover:scale-110 '>
                                 <a
                                     title='LinkedIn'
                                     href="https://www.linkedin.com/in/maeve-tra-3a65911b4/"
@@ -46,7 +47,7 @@ const NavBar = () => {
                                     </svg>
                                 </a>
                             </button>
-                            <button className='min-w-fit bg-nblue hover:scale-110 text-white whitespace-nowrap hover:bg-red-700 text-sm px-4 py-2 rounded-full mx-2'>
+                            <button className='min-w-fit bg-nblue hover:scale-110 text-white whitespace-nowrap hover:bg-red-700 text-sm px-4 py-2 rounded-full '>
                                 <Link title='Resume' target='_blank' href='/resume.pdf'>
                                    My Resume
                                 </Link>

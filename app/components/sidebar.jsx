@@ -22,7 +22,7 @@ const SideBar = () => {
         <> {
             open
                 ? (
-                    <svg  className="flex fixed items-center cursor-pointer left-10 top-6 z-30" 
+                    <svg  className="flex fixed items-center cursor-pointer left-5 top-6 z-30" 
                     xmlns="http://www.w3.org/2000/svg" 
                     height="40" 
                     viewBox="0 0 384 512"
@@ -34,12 +34,12 @@ const SideBar = () => {
                 : (
                     <svg
                         onClick={() => setOpen(!open)}
-                        className="fixed z-30 flex items-center cursor-pointer left-10 top-6"
+                        className="ml-5 items-center cursor-pointer"
                         fill="#580C0C"
                         viewBox="0 0 100 80"
                         width="40"
                         height="40">
-                        <rect width="100" height="10"></rect>
+                        <rect width="100" height="10" ></rect>
                         <rect y="30" width="100" height="10"></rect>
                         <rect y="60" width="100" height="10"></rect>
                     </svg>
@@ -48,15 +48,15 @@ const SideBar = () => {
             {open ? 
             <motion.div initial="closed"
             whileInView="open"
-            variants={variants} className='fixed flex h-full w-4/6 shadow-lg z-20'>
-                <div className='w-2/5 h-full flex flex-col justify-center items-center bg-dred'>
-                    <div className='w-full hover:cursor-pointer' onClick={() => { setOpen(!open);router.push('/')}}>
-                        
+            variants={variants} className='flex flex-col md:flex-row min-h-screen h-full w-4/6 shadow-lg z-20 self-start overflow-y-auto'>
+                <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <div className='w-full md:w-2/5 md:h-full flex flex-col justify-center py-10 items-center bg-dred'>
+                    <div className='md:w-full w-1/2 hover:cursor-pointer' onClick={() => { setOpen(!open);router.push('/')}}>
                         <Image src={CoverCircleImg} alt="img" className="object-cover animate-disc z-1"></Image>
                     </div>
-                    <div className={`text-white font-bold text-4xl  ${playfair.className}`}>Maeve Tra</div>
-                    <div className='text-white mt-4 px-4 text-center'>&quot;Enjoy your time while you&apos;re here.&quot;</div>
-                    <div className='flex justify-evenly mt-10'>
+                    <div className={`text-white font-bold text-2xl md:text-4xl  ${playfair.className}`}>Maeve Tra</div>
+                    <div className='text-white mt-4 px-4 text-sm md:text-base text-center'>&quot;Enjoy your time while you&apos;re here.&quot;</div>
+                    <div className='md:flex justify-evenly mt-10 hidden'>
                     <svg className='mr-4 hover:cursor-pointer' xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 532 532" 
                     fill= {heart ? "#ff0000" : "#ffffff"} stroke-width="20"
                         onClick={() => setHeart(!heart)}>
@@ -69,12 +69,12 @@ const SideBar = () => {
                                     <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
                     </div>
                 </div>
-                <div className='h-full w-3/5 flex flex-col justify-center bg-white px-20'>
+                <div className='h-full w-full md:w-3/5 flex flex-col justify-center bg-white px-6 py-8 md:px-20 '>
                     <div>
-                        <h2 className={`text-3xl font-bold text-dred sm:text-3xl `}>THE CONTENT</h2>
-                        <h2 className="text-2xl font-semibold sm:text-2xl text-dgrey">PLAYLIST <span className='text-lg font-normal'>/ {pages.length} tracks</span></h2>
+                        <h2 className={`text-xl md:text-3xl font-bold text-dred sm:text-3xl `}>THE CONTENT</h2>
+                        <h2 className="text-lg md:text-2xl font-semibold sm:text-2xl text-dgrey">PLAYLIST <span className='text-lg font-normal'>/ {pages.length} tracks</span></h2>
                     </div>
-                    <div className='mt-8 divide-y divide-solid w-full '>
+                    <div className='md:mt-8 divide-y divide-solid w-full'>
                         {pages.map((page, index) => (
                             <div key={index}>
                                 <Link onClick={() => setOpen(!open)} className='flex flex-cols justify-between pt-4' href={page.to}>
@@ -82,7 +82,7 @@ const SideBar = () => {
                             <div>
                             <svg fill="#580C0C" className='inline-flex mr-4 pb-1' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
                                 <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                            <svg fill="#580C0C" className='inline-flex mr-4 pb-1' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <svg fill="#580C0C" className='hidden md:inline-flex mr-4 pb-1' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                                 <path d="M0 224c0 17.7 14.3 32 32 32s32-14.3 32-32c0-53 43-96 96-96H320v32c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l64-64c12.5-12.5 12.5-32.8 0-45.3l-64-64c-9.2-9.2-22.9-11.9-34.9-6.9S320 19.1 320 32V64H160C71.6 64 0 135.6 0 224zm512 64c0-17.7-14.3-32-32-32s-32 14.3-32 32c0 53-43 96-96 96H192V352c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9l-64 64c-12.5 12.5-12.5 32.8 0 45.3l64 64c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V448H352c88.4 0 160-71.6 160-160z"/></svg>
                             </div>
                             </Link>

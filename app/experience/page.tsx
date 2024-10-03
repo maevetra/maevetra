@@ -16,7 +16,7 @@ export default function Experience() {
         <section
             id="experience"
             ref={ref}
-            className="min-w-screen items-center justify-between -mt-12 pt-24 px-36 bg-[#F5F7FB]">
+            className="items-center justify-between -mt-12 pt-24 px-8 md:px-36 bg-[#F5F7FB]">
             <Heading
                 number="03"
                 title="My Experience & Education"
