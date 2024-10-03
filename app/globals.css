@@ -19,7 +19,7 @@
 
 @layer base {
   html {
-    @apply scroll-auto !important;
+    @apply scroll-smooth !important;
   }
 }
 
@@ -27,4 +27,3 @@ body {
   @apply bg-white text-nblue;
   @apply text-lg sm:text-base;
 }
-

@@ -101,8 +101,13 @@ export const projects = [
 
 export const experiences = [
     {
+        title: "Full-stack Software Engineer @ Immigrant Buddies",
+        date: "July 2024 - Present",
+        description: "I develop and deliver end-to-end features and built serverless architecture using AWS Amplify, Lambda and DynamoDB. I also developed and deployed GraphQL APIs using AWS AppSync, connecting to data sources such as DynamoDB."
+    },
+    {
         title: "AWS OpenSearch JavaScript Client Contributor",
-        date: "Sep 2023 - Present",
+        date: "Sep 2023 - March 2024",
         location: "Remote",
         description: "",
         icon: React.createElement(FaReact),
@@ -141,13 +146,15 @@ export const experiences = [
     }
 ] as const;
 export const languages = [
+    "TypeScript",
     "Javascript",
+    "GraphQL",
+    "AWS",
     "HTML/CSS",
     "React",
     "Python",
     "SQL",
     "Node",
-    "AWS",
     "Java",
     "C/C++",
     "Figma",

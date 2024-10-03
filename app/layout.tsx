@@ -16,13 +16,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en">
 
-      <body className={`flex flex-col min-h-screen ${poppins.className} `}>
+      <body className={`flex flex-col min-h-screen ${poppins.className}`}>
         <ActiveSectionContextProvider>
-        <NavBar/>
-        <SideBar/>
-        {children}
+          <div className="flex flex-row bg-white shadow w-screen">
+            <NavBar/>
+            <SideBar/>
+          </div>
+          {children}
         </ActiveSectionContextProvider>
         
       </body>

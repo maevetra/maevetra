@@ -48,9 +48,9 @@ export default function Home() {
 
     return (
         <div className="pt-16">
-        <section ref={ref} id="home" className="min-h-[calc(100vh-5rem)] flex flex-grow flex-row items-center justify-between justify-items-center text-center px-8">
+        <section ref={ref} id="home" className="min-h-[calc(100vh-5rem)] flex flex-col md:flex-row items-center justify-between text-center md:px-8">
                  <motion.header
-                    className='h-full w-1/2 flex-shrink'
+                    className='h-full md:w-1/2 flex-shrink'
                     initial="hide"
                     whileInView="show"
                     viewport={{ once: true }}
@@ -58,18 +58,18 @@ export default function Home() {
                         <Image src={CoverImg} alt="My picture"></Image>
                     </motion.header>
                     <motion.header
-                    className="h-full w-1/2 text-2xl sm:text-base text-center whitespace-nowrap"
+                    className="h-full md:w-1/2 text-base text-center whitespace-nowrap"
                     initial="hide"
                     whileInView="show"
                     viewport={{ once: true }}
                     variants={introHeaderVariants}>
                          Hi, my name is
-                <div className="w-fit text-center m-auto mb-5  text-9xl sm:text-7xl font-black text-dred place-self-center ">
+                <div className="w-fit text-center m-auto mb-5  text-7xl font-black text-dred place-self-center ">
                 <h1 className={`${playfair.className} overflow-hidden whitespace-nowrap `}>
                     Maeve Tra
                 </h1>
                 </div>
-                Student at Purdue University | B.S. in Computer Science | Graduating May 2024
+                Full-stack Software Engineer
                 <ul className="m-auto mt-3 flex flex-row justify-items-center justify-evenly">
                     <Link href='#about' className="cursor-pointer"
                     onClick={()=> {setActiveSection("about"); }}>  <svg fill="#580C0C" className='inline-flex mr-4 pb-1' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">

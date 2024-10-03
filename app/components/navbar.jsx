@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import { useTheme } from 'next-themes'
 import { useScrollPosition } from '@/lib/hooks';
 //import ResumePDF from './resume.pdf';
 
@@ -9,10 +8,8 @@ const NavBar = () => {
     const scrollPosition = useScrollPosition()
 
     return (
-        <div className={`fixed min-w-full h-20 top-0 z-10 ${scrollPosition > 0 ? 'bg-white shadow' : 'bg-transparent shadow-none'}`}>
-    
-        <div className={` fixed top-6 right-0 z-10 `}>
-                    <div className="w-1/3 px-10 flex items-stretch justify-center">
+        <div className={`fixed top-6 right-0 z-10 `}>
+                    <div className="w-1/3 px-10 flex items-stretch justify-start">
                             <button className='hover:scale-110 mx-2'>
                                 <a title='GitHub' href="https://github.com/maevetra" target="_blank">
                                     <svg
@@ -55,7 +52,6 @@ const NavBar = () => {
                                 </Link>
                             </button>
                     </div>
-        </div>
         </div>
     )
 }
