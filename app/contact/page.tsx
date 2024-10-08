@@ -16,7 +16,7 @@ export default function Contact() {
                 number="04"
                 title="Don't be a stranger"
                 description="Let's connect!"
-                width="4/5"/>
+                grow="w-full"/>
             <p className="text-gray-700 mt-6 dark:text-white/80">
                 Please contact me directly at{" "}
                 <a className="underline" href="mailto:maeve.ntra@gmail.com">

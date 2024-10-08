@@ -27,6 +27,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      boxShadow: {
+        'toTopButton': '2px 2px 5px '
+      },
       animation: {
         typing: "typing 2s",
         disc: "spin 10s linear infinite"

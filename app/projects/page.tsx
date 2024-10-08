@@ -16,7 +16,7 @@ export default function Projects() {
                 title="My projects"
                 number="02"
                 description="Some projects I have done to showcase my skills."
-                width="2/5"/>
+                grow="w-2/4"/>
             <div>
                 {
                     projects.map((project, index) => (

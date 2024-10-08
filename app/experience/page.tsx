@@ -21,7 +21,7 @@ export default function Experience() {
                 number="03"
                 title="My Experience & Education"
                 description="My roles over the years"
-                width="3/5"/>
+                grow="w-3/4"/>
             <div
                 className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-dred">
                 {

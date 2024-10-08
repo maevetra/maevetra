@@ -1,12 +1,12 @@
 import { playfair } from "../font";
 const Heading = (props) => {
     return (
-        <div className="mb-10">
+        <div className="mb-10 w-full">
             <h2 className="text-xl font-bold tracking-tight uppercase text-dgrey sm:text-xl">TRACK {props.number}.</h2>
             <h2 className="mt-1 text-4xl text-dred font-black lowercase tracking-wide sm:text-5xl">{props.title}</h2>
             <p className="mt-1 italic text-md text-dgrey leading-8 ">{props.description}</p>
-            <div className="min-w-screen border-nblue border p-0 bg-white h-4 mb-4 mt-4">
-                <div className={`bg-nblue h-3.5 ${props.width ? `w-${props.width}` : "w-1/5"}`}></div>
+            <div className="w-full border-nblue border p-0 bg-white h-4 mb-4 mt-4">
+                <div className={`bg-nblue h-full ${props.grow}`}></div>
             </div>
             <div className='flex flex-cols justify-between'>
                 <div className='inline-flex' id='info'>

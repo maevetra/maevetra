@@ -15,14 +15,14 @@ export default function About() {
                 description="Here you will find more information about
                     me, what I do, and my current skills mostly in terms of programming and
                     technology."
-                number="01"/>
+                number="01" grow='w-1/4'/>
 
             <div className=''>
                 <div className='col-span-2 flex-shrink pr-5'>
                     <div className='leading-relaxed'>
                         <h3 className="text-xl font-bold tracking-tight sm:text-xl">Who am I?</h3>
                         I&apos;m a full-stack developer specializing in building and designing exceptional end-to-end products for exceptional digital experience. Right now, I am still looking for an opportunity to make an impact!
-                        <br/>
+                        {/* <br/>
                         I am currently eligible for full-time positions in the U.S. under&nbsp;
                             <a
                                 className='underline font-semibold'
@@ -30,8 +30,8 @@ export default function About() {
                                 target='_blank'>
                                 Optional Practical Training (OPT)
                             </a>.
-                        <br/>
-                         Feel free to look around and if you have any question, hit me up at <a className='underline' href="mailto:maeve.ntra@gmail.com">maeve.ntra@gmail.com.</a>
+                        <br/> */}
+                        <br/> Feel free to look around and if you have any question, hit me up at <a className='underline' href="mailto:maeve.ntra@gmail.com">maeve.ntra@gmail.com.</a>
                         
                     </div>
                     <div className="mx-auto max-w-screen place-self-start lg:mx-0 mt-5">

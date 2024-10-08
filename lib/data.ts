@@ -101,7 +101,7 @@ export const projects = [
 
 export const experiences = [
     {
-        title: "Full-stack Software Engineer @ Immigrant Buddies",
+        title: "Volunteered Full-stack Software Engineer @ Immigrant Buddies",
         date: "July 2024 - Present",
         description: "I develop and deliver end-to-end features and built serverless architecture using AWS Amplify, Lambda and DynamoDB. I also developed and deployed GraphQL APIs using AWS AppSync, connecting to data sources such as DynamoDB."
     },

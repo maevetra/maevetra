@@ -5,6 +5,7 @@ import Footer from './components/footer'
 import  { poppins } from './font'
 import NavBar from './components/navbar'
 import ActiveSectionContextProvider from '@/context/activeSection'
+import ScrollButton from './components/scrollToTopButton'
 
 export const metadata: Metadata = {
   title: "Maeve Tra's Website",
@@ -25,6 +26,7 @@ export default function RootLayout({
             <NavBar/>
           </div>
           {children}
+          <ScrollButton/>
         </ActiveSectionContextProvider>
         
       </body>
